@@ -1,0 +1,149 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.Equilibre"
+4    android:versionCode="6"
+5    android:versionName="1.0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+8-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:3:5-66
+11-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:3:22-64
+12    <!-- Include required permissions for Google Maps API to run. -->
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\arthu\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
+13-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\arthu\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:23:22-76
+14
+15    <uses-feature
+15-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\arthu\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+16        android:glEsVersion="0x00020000"
+16-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\arthu\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+17        android:required="true" />
+17-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\arthu\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+18
+19    <queries>
+19-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\arthu\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+20
+21        <!-- Needs to be explicitly declared on Android R+ -->
+22        <package android:name="com.google.android.apps.maps" />
+22-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\arthu\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+22-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\arthu\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+23    </queries>
+24
+25    <application
+26        android:name="android.app.Application"
+26-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:6:9-42
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.6.0] C:\Users\arthu\.gradle\caches\transforms-3\acbce933e4b464a5224ed377a62db1f5\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+28        android:icon="@mipmap/launcher_icon"
+28-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:7:9-45
+29        android:label="Equilibre" >
+29-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:5:9-34
+30        <activity
+30-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:8:9-29:20
+31            android:name="com.Equilibre.MainActivity"
+31-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:9:13-41
+32            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+32-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:13:13-163
+33            android:exported="true"
+33-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:10:13-36
+34            android:hardwareAccelerated="true"
+34-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:14:13-47
+35            android:launchMode="singleTop"
+35-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:11:13-43
+36            android:theme="@style/LaunchTheme"
+36-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:12:13-47
+37            android:windowSoftInputMode="adjustResize" >
+37-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:15:13-55
+38
+39            <!--
+40                 Specifies an Android theme to apply to this Activity as soon as
+41                 the Android process has started. This theme is visible to the user
+42                 while the Flutter UI initializes. After that, this theme continues
+43                 to determine the Window background behind the Flutter UI.
+44            -->
+45            <meta-data
+45-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:20:13-24:17
+46                android:name="io.flutter.embedding.android.NormalTheme"
+46-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:21:15-70
+47                android:resource="@style/NormalTheme" />
+47-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:23:15-52
+48
+49            <intent-filter>
+49-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:25:13-28:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:26:17-68
+50-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:26:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:27:17-76
+52-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:27:27-74
+53            </intent-filter>
+54        </activity>
+55        <!--
+56             Don't delete the meta-data below.
+57             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+58        -->
+59        <meta-data
+59-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:32:9-35:15
+60            android:name="flutterEmbedding"
+60-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:33:13-44
+61            android:value="2" />
+61-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:34:13-30
+62        <meta-data
+62-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:36:9-39:15
+63            android:name="com.google.android.geo.API_KEY"
+63-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:37:13-58
+64            android:value="AIzaSyCTWJxG5_gqfF4vQqrcxWDJPKvDbOlxGGw" />
+64-->C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\android\app\src\main\AndroidManifest.xml:38:13-68
+65
+66        <activity
+66-->[:url_launcher_android] C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
+67            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+67-->[:url_launcher_android] C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+68            android:exported="false"
+68-->[:url_launcher_android] C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+69            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+69-->[:url_launcher_android] C:\Users\arthu\Desktop\Projetos pessoais\schedule_application\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
+70
+71        <uses-library
+71-->[androidx.window:window:1.0.0-beta04] C:\Users\arthu\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+72            android:name="androidx.window.extensions"
+72-->[androidx.window:window:1.0.0-beta04] C:\Users\arthu\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+73            android:required="false" />
+73-->[androidx.window:window:1.0.0-beta04] C:\Users\arthu\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+74        <uses-library
+74-->[androidx.window:window:1.0.0-beta04] C:\Users\arthu\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+75            android:name="androidx.window.sidecar"
+75-->[androidx.window:window:1.0.0-beta04] C:\Users\arthu\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+76            android:required="false" /> <!-- Needs to be explicitly declared on P+ -->
+76-->[androidx.window:window:1.0.0-beta04] C:\Users\arthu\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+77        <uses-library
+77-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\arthu\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+78            android:name="org.apache.http.legacy"
+78-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\arthu\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+79            android:required="false" />
+79-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\arthu\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+80
+81        <activity
+81-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\arthu\.gradle\caches\transforms-3\3ff720be07735976176520d1c05fb799\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+82            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+82-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\arthu\.gradle\caches\transforms-3\3ff720be07735976176520d1c05fb799\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+83            android:exported="false"
+83-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\arthu\.gradle\caches\transforms-3\3ff720be07735976176520d1c05fb799\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+84            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+84-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\arthu\.gradle\caches\transforms-3\3ff720be07735976176520d1c05fb799\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+85
+86        <meta-data
+86-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\arthu\.gradle\caches\transforms-3\601d4158b382ad9f634d3bbb23a34c83\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+87            android:name="com.google.android.gms.version"
+87-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\arthu\.gradle\caches\transforms-3\601d4158b382ad9f634d3bbb23a34c83\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+88            android:value="@integer/google_play_services_version" />
+88-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\arthu\.gradle\caches\transforms-3\601d4158b382ad9f634d3bbb23a34c83\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+89    </application>
+90
+91</manifest>

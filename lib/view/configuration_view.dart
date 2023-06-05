@@ -1,8 +1,10 @@
 import 'dart:ui';
 import 'package:Equilibre/colors.dart';
 import 'package:Equilibre/domain/address_entity.dart';
+import 'package:Equilibre/domain/all_informations_entity.dart';
 import 'package:Equilibre/domain/opening_hours.dart';
 import 'package:Equilibre/infra/configuration_response.dart';
+import 'package:Equilibre/infra/get_all_infos_response.dart';
 import 'package:Equilibre/infra/informations_post.dart';
 import 'package:Equilibre/infra/interval_post.dart';
 import 'package:Equilibre/infra/opening_hours_response.dart';
@@ -30,7 +32,7 @@ class ConfigurationScreen extends StatefulWidget {
 class _ConfigurationScreenState extends State<ConfigurationScreen> {
   bool isLoading = false;
   final cepMask = MaskTextInputFormatter(mask: '#####-###');
-
+  late AllInformationsEntity allInfos;
   final empresaController = TextEditingController();
   final ruaAvenidaController = TextEditingController();
   final numeroController = TextEditingController();
@@ -48,8 +50,26 @@ class _ConfigurationScreenState extends State<ConfigurationScreen> {
     false,
   ];
 
+  getAllInformations()async{
+    await AllInformationsResponse().ping().then((value){
+      allInfos = value;
+      setState(() {
+      empresaController.text = allInfos.nome;
+      ruaAvenidaController.text = allInfos.ruaAvenida;
+      numeroController.text = allInfos.numero.toString();
+      complementoController.text = allInfos.complemento;
+      bairroController.text = allInfos.bairro;
+      cidadeController.text = allInfos.cidade;
+      estadoController.text = allInfos.estado;
+      paisController.text = allInfos.pais;
+      cepController.text = allInfos.cep.toString();
+      });
+    });
+  }
+
   @override
   void initState() {
+    getAllInformations();
     getInterval();
     super.initState();
   }

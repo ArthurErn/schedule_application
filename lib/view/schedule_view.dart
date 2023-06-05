@@ -194,6 +194,15 @@ class _ScheduleViewState extends State<ScheduleView> {
                   height: 170,
                 )),
             Visibility(
+                visible: isClicked == false,
+                child: const Center(
+                  child: Text(
+                    'Selecione a data desejada para seu agendamento',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 20, color: Colors.redAccent),
+                  ),
+                )),
+            Visibility(
                 visible: scheduleHoursList.isEmpty && isClicked == true,
                 child: const Text(
                   'Não trabalhamos neste dia!',

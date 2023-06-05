@@ -345,15 +345,18 @@ class HomeScreenState extends State<HomeScreen> {
                                                       MainAxisAlignment
                                                           .spaceBetween,
                                                   children: [
-                                                    AutoSizeText(
-                                                        scheduleList[index]
-                                                            .nomeServico,
-                                                        style: const TextStyle(
-                                                            fontSize: 22,
-                                                            color: Colors.white,
-                                                            fontWeight:
-                                                                FontWeight
-                                                                    .bold)),
+                                                    Expanded(
+                                                      child: AutoSizeText(
+                                                          scheduleList[index]
+                                                              .nomeServico,
+                                                              maxLines: 3,
+                                                          style: const TextStyle(
+                                                              fontSize: 22,
+                                                              color: Colors.white,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold)),
+                                                    ),
                                                     Text(
                                                         'R\$${currency.format(scheduleList[index].valor)}',
                                                         style: const TextStyle(
@@ -505,6 +508,7 @@ class HomeScreenState extends State<HomeScreen> {
                       width: MediaQuery.of(context).size.width -40,
                       child: AutoSizeText(
                         "Olá, ${userCredentials.nome}",
+                        maxLines: 1,
                         style: TextStyle(
                             fontSize: 22,
                             color: AppColors.selectedColor,

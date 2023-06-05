@@ -7,6 +7,7 @@ import 'package:Equilibre/utilities/move_to.dart';
 import 'package:Equilibre/utilities/text_field.dart';
 import 'package:Equilibre/view/home_view.dart';
 import 'package:Equilibre/view/login_screen.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cherry_toast/cherry_toast.dart';
 import 'package:cherry_toast/resources/arrays.dart';
 import 'package:flutter/material.dart';
@@ -82,12 +83,16 @@ class _ServicesScreenState extends State<ServicesScreen> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              listService[index].nomeServico,
-                              style: const TextStyle(
-                                  fontSize: 19,
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.white),
+                            Expanded(
+                              child: AutoSizeText(
+                                listService[index].nomeServico,
+                                maxLines: 3,
+                                wrapWords: false,
+                                style: const TextStyle(
+                                    fontSize: 19,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.white),
+                              ),
                             ),
                             Text(
                                 "R\$${currency.format(listService[index].valor).toString()}",

@@ -120,7 +120,6 @@ class _ScheduleSecondViewState extends State<ScheduleSecondView> {
                               decoration: BoxDecoration(color: AppColors.whiteColor, borderRadius: BorderRadius.circular(14)),
                               child: Container(
                                 padding: const EdgeInsets.all(8),
-                                height: 86,
                                 width: MediaQuery.of(context).size.width,
                                 decoration: BoxDecoration(color: selectedIndex == index?const Color.fromARGB(255, 255, 239, 95):AppColors.primaryColor.withOpacity(0.8), borderRadius: BorderRadius.circular(14)),
                                 child: Column(
@@ -148,7 +147,9 @@ class _ScheduleSecondViewState extends State<ScheduleSecondView> {
                                       children: [
                                         Icon(Icons.work_rounded, color: selectedIndex == index?Colors.black:Colors.white, size: 32,),
                                         const SizedBox(width: 6),
-                                        Text(barberServiceList[index].nomeServico.toUpperCase(), style: TextStyle(color: selectedIndex == index?Colors.black:Colors.white, letterSpacing: .2, fontSize: 17)),
+                                        Expanded(child: AutoSizeText(barberServiceList[index].nomeServico.toUpperCase(), 
+                                        maxLines: 3,
+                                        style: TextStyle(color: selectedIndex == index?Colors.black:Colors.white, fontSize: 15))),
                                       ],
                                     ),
                                   ],
