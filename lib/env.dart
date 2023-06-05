@@ -1,3 +1,3 @@
 class Env{
-  static String url = 'https://app-modelo.devja.com.br';
+  static String url = 'https://terapeuta-dario-tome.devja.com.br';
 }

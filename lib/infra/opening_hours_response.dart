@@ -10,6 +10,7 @@ class OpeningHoursResponse {
         '${Env.url}/api/v1/horario_atendimento/');
     response.forEach((item){list.add(OpeningHours.fromJson(item));
     });
+    print('teste');
     return list;
   }
 }

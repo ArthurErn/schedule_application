@@ -52,12 +52,14 @@ class _InformationScreenState extends State<InformationScreen> {
                         const SizedBox(
                           width: 25,
                         ),
-                        AutoSizeText(
-                          "${address.ruaAvenida}, ${address.numero}\n${address.complemento}\n${address.cep} ${address.bairro}, ${address.cidade}\n${address.estado}, ${address.pais}",
-                          style: const TextStyle(
-                              fontSize: 18,
-                              color: Colors.white,
-                              fontWeight: FontWeight.w400),
+                        Expanded(
+                          child: AutoSizeText(
+                            "${address.ruaAvenida}, ${address.numero}\n${address.complemento}\n${address.cep} ${address.bairro}, ${address.cidade}\n${address.estado}, ${address.pais}",
+                            style: const TextStyle(
+                                fontSize: 18,
+                                color: Colors.white,
+                                fontWeight: FontWeight.w400),
+                          ),
                         )
                       ],
                     ),

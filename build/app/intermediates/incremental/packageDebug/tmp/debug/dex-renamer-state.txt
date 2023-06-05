@@ -1,0 +1,4 @@
+#Wed May 03 10:11:24 BRT 2023
+base.0=C\:\\Users\\arthu\\Desktop\\Projetos pessoais\\schedule_application\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

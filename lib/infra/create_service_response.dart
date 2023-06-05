@@ -31,6 +31,7 @@ class CreateServiceResponse {
 
   Future put(String nome, String descricao, double valor, int tempoServico, int idServico) async {
     HttpPut repo = HttpPut();
+    // ignore: unused_local_variable
     Response res = await repo.connect(
         '${Env.url}/api/v1/servico/$idServico', json: jsonEncode(
           {
@@ -45,7 +46,7 @@ class CreateServiceResponse {
             "tempo_servico": tempoServico
           }
     ));
-    print(response.statusCode);
+    print(response.body);
     return response;
   }
 }
